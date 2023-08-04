@@ -9,7 +9,7 @@ html{
 }
 @font-face {
   font-family: 'LisuBosa'; 
-  src: url(/fonts/LisuBosa-Black.ttf);
+  src: url(/fonts/LisuBosa-Medium.ttf);
 }
 .container{
   /* background-image: linear-gradient(to top, #1e1d1f, #211d28, #221e32, #211e3c, #1b2047);    font-family:'LisuBosa', sans-serif; */
@@ -21,8 +21,9 @@ html{
   font-size: 1.6rem;
 }
 [class$="text"]{
+  font-family:"Lisubosa";
   opacity: 0.6;
-  padding-bottom:2rem;
+  padding-bottom:1.6rem;
   line-height: 1.6rem;
   text-align: center;
   color:#EFEDFD;
@@ -51,10 +52,10 @@ display:flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
-margin-bottom: 5rem;
+/* margin-bottom: 5rem; */
 }
 .hero__head{
-  width:70%;
+line-height:1rem;
 }
 .hero__btn--start,.reflect__btn{
     font-size: 0.8rem;
@@ -83,7 +84,6 @@ margin-bottom: 5rem;
     padding:0 2rem;   
 }
 .feature__head{
- font-style: ;
 }
 /* research section */
 .research{
@@ -93,6 +93,7 @@ margin-bottom: 5rem;
   align-items: center;
   text-align: center;
   padding:0rem 2rem;
+  margin-bottom: 0.1rem;
 }
 .research__head{
 font-size:1.2rem;
@@ -113,10 +114,12 @@ font-size:1.2rem;
   flex-direction: column;
   justify-content: space-between;
 }
-.reflect__head-main{
+.reflect__head{
   font-size: 2rem;
   font-weight: lighter;
   text-align: center;
+  line-height: 2.5rem;;
+  padding-bottom: 1rem;;
 }
 .reflect__browser{
   background-image: linear-gradient(to right bottom, #6b43d9, #754dd7, #7d57d6, #8660d4, #8d6ad2);}
@@ -128,14 +131,157 @@ font-size:1.2rem;
 }
 .reflect__browser,.reflect__docs,.reflect__eco{
 padding:1rem;
-margin-bottom: 1rem;
+margin-bottom:0.5rem;
+align-items: left;
 }
-.reflect__head{
+.reflect__sub-head,.reflect__name-text,.reflect__text{
+  text-align: left;
+}
+.reflect__sub-head{
   font-size: 1.6rem;
 }
 .reflect__name-text{
   padding-bottom:1rem;
 }
+.reflect__text{
+  padding-bottom:.6rem;
+}
 .reflect__btn{
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  padding: .7rem 1.2rem;
+}
+.apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.apps__button{
+  width: 6rem;
+  height: 2rem;
+  background: linear-gradient(to right, #c17cad, #3f3f3f);
+  margin-bottom: 1rem;
+  border-radius:20px;
+}
+
+.apps__head {
+  /* font-size: 1.5rem; */
+  margin-bottom: 1rem;
+}
+
+.apps__zapier,
+.apps__readwise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.apps__icon {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+.apps__sub-head {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.apps__text {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 34rem;
+  padding-bottom:12rem;
+  background-image: url(/images/getaccess_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.access__button{
+  background: linear-gradient(to right, #c17cad, #3f3f3f);
+padding: 0.5rem 1rem;
+border-radius: 20px;
+}
+.access__head{
+  font-size: 1.4rem;
+}
+
+.additional {
+  text-align: center;
+  padding-bottom:6rem;
+}
+
+.additional__sub-head,
+.additional__text {
+  font-size: 1.2rem;
+  line-height:.8rem;
+  margin: 10px 0;
+}.additional__icon {
+  margin-top:2.4rem;
+  margin-bottom:1rem;
+}
+
+/* CSS styles */
+.blogs-container {
+  display: flex;
+  width: 400px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  position: relative;
+}
+
+[class*=blog-layer] {
+  position: absolute;
+  padding-top: 1rem; /* Adjust the padding as needed */
+  overflow: hidden;
+  background-color: #726d6d;
+  /* width:320px;
+  height:320px; */
+}
+
+ .blog-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* To make the images fill the container */
+}
+
+.blog-layer1 {
+  z-index: 5;
+  top: 0;
+  left: 0;
+  padding-bottom:1rem;
+}
+
+.blog-layer2 {
+  z-index: 4;
+  top: 10px; /* Adjust the position as needed */
+  left: 20px; /* Adjust the position as needed */
+}
+
+.blog-layer3 {
+  z-index: 3;
+  top: 20px; /* Adjust the position as needed */
+  left: 40px; /* Adjust the position as needed */
+}
+
+.blog-layer4 {
+  z-index: 2;
+  top: 30px; /* Adjust the position as needed */
+  left: 60px; /* Adjust the position as needed */
+}
+
+.blog-layer5 {
+  z-index: 1;
+  top: 40px; /* Adjust the position as needed */
+  left: 80px; /* Adjust the position as needed */
+}
+.blog__text{
+  padding:0;
 }
