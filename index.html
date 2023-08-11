@@ -6,112 +6,211 @@
     <title>Reflect Web Development</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <!-- header section -->
-<div class="header-container">
           <div class="header">
             <div class="header__left">
               <img class="header__logo" src="/images/logo1.svg" alt="header_logo">
               <div class="header__name">Reflect</div>
             </div>
+            <div class="header__links">
+              <a href="#" class="header__links--item">Product</a>
+              <a href="#" class="header__links--item">Pricing</a>
+              <a href="#" class="header__links--item">Company</a>
+              <a href="#" class="header__links--item">Blog</a>
+              <a href="#" class="header__links--item">Changelog</a>
+            </div>
+            <div class="header-buttons">
+              <button class="header__login-btn">Login</button>
+              <button class="header__start-btn">Start Free Trial</button>
+            </div>
             <div class="header__menu">
-                <img src="images/menu_icon.svg"/>       
-             </div>
-          </div>
-        <!--Hero section  -->
+              <img src="images/menu_icon.svg" alt="menu_icon">       
+            </div>
+          </div> 
+        
+                <!--Hero section  -->
           <div class="hero">
-            <img class="hero__image" src="/images/hero_image.png" alt="hero-image"></img>
+            <div class="hero__image">
+            <img src="/images/hero_image.png" alt="hero-image"></img>
+          </div>
+          <div class="hero__content">
             <div class="hero__head">Build the web</div>
             <div class="hero__head">you want</div>
             <div class="hero__text">This is the all-in-one web framework designed for speed. Pull
               your content from anywhere and deploy everywhere, all
               powered by your favorite UI components and libraries.</div>
             <button class="hero__btn--start"><span class="btn-linear">Get Started</span></button>
-            <div class="hero__image"></div>
+            </div>
           </div>
-        </div>
          <!-- Feature section -->
           <div class="feature">
+            <div class="feature__container">
             <img class="feature__image" src="/images/feature_img.png"></img>
+            <div class="feature__content">
            <div class="feature__head">Get more out</div>
            <div class="feature__head"> of your meetings </div>
-           <div class="feature__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quos modi quod commodi autem itaque libero maiores voluptate! Laboriosam, deserunt?</div> 
+           <div class="feature__text">
+           <div class="feature__text1">Keep track of all your meetings and what was discussed.</div>
+           <div class="feature__text2">Import events quickly with our Google Calendar and Outlook integrations.</div> 
+          </div>
+          </div>
+           </div>
            <div class="feature__head">Never lose information </div> 
-           <div class="feature__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quos modi quod commodi autem itaque libero maiores voluptate! Laboriosam, deserunt?</div> 
+           <div class="feature__text">Collect your web snippets, Kindle highlights and important links – all in one place.
+            <span class="word-break">Then quickly find them again from any device.</span></div> 
         </div>
         <!-- Research section -->
         <div class="research">
-            <img class="research__icon" src="/images/monitor_icon.svg" alt="logo1"></img>
-            <div class="research__head">Integrated with your devices</div>
-            <div class="research__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid vero eaque porro, tenetur magnam suscipit?</div>
-            <img class="research__icon" src="/images/secure_icon.svg" alt="logo1"></img>
-            <div class="research__head">Secure but open</div>
-            <div class="research__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid vero eaque porro, tenetur magnam suscipit?</div>
+          <div class="research__row">
+            <div class="research__row--content">
+                <img class="research__icon" src="/images/monitor_icon.svg" alt="logo1"></img>
+                <div class="research__head">Integrated with your devices</div>
+                <div class="research__text">We're everywhere, mobile or desktop, online
+                  or offline. Everything is synced in real-time.</div>
+            </div>
+            <div class="research__row--content">
+              <img class="research__icon" src="/images/secure_icon.svg" alt="logo1"></img>
+              <div class="research__head">Secure but open</div>
+              <div class="research__text">End-to-end encryption keeps your notes secure.
+                Our export and API keeps your notes accessible.</div>
+            </div>
+          </div>
+          <div class="research__row">
             <button class="research__btn">Research and reading</button>
-            <img class="research__icon" src="/images/speed_icon.svg" alt="logo1"></img>
-            <div class="research__head">Built for speed</div>
-            <div class="research__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid vero eaque porro, tenetur magnam suscipit?</div>
-            <img class="research__icon" src="/images/notes_icon.svg" alt="logo1"></img>
-            <div class="research__head">Networked notes</div>
-            <div class="research__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid vero eaque porro, tenetur magnam suscipit?</div>
-            <img class="research__icon" src="/images/ios_icon.svg" alt="logo1"></img>
-            <div class="research__head">iOS app</div>
-            <div class="research__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid vero eaque porro, tenetur magnam suscipit?</div>
+          </div>
+          <div class="research__row">
+            <div class="research__row--content">
+              <img class="research__icon" src="/images/speed_icon.svg" alt="speed icon"></img>
+              <div class="research__head">Built for speed</div>
+              <div class="research__text">Instantly sync your notes
+                across devices</div>
+            </div>
+            <div class="research__row--content">
+              <img class="research__icon" src="/images/notes_icon.svg" alt="notes icon"></img>
+              <div class="research__head">Networked notes</div>
+              <div class="research__text">Form a graph of ideas with
+                backlinked notes</div>
+            </div>
+            <div class="research__row--content">
+              <img class="research__icon" src="/images/ios_icon.svg" alt="ios icon"></img>
+              <div class="research__head">iOS app</div>
+              <div class="research__text">Capture ideas on the go,
+                online or offline</div>
+            </div>
+            <div class="research__row--content-encrypt">
+              <img class="research__icon" src="/images/encrypt_icon.svg" alt="encrypt icon"></img>
+              <div class="research__head">End-to-end encryption</div>
+              <div class="research__text">Only you can access your
+                notes</div>
+            </div>
+          </div>
+          <div class="research__row research-third">
+            <div class="research__row--content">
+              <img class="research__icon" src="/images/calender_icon.svg" alt="speed icon"></img>
+              <div class="research__head">Calendar integration</div>
+              <div class="research__text">Keep track of meetings and
+                agendas</div>
+            </div>
+            <div class="research__row--content">
+              <img class="research__icon" src="/images/publish_icon.svg" alt="notes icon"></img>
+              <div class="research__head">Publishing</div>
+              <div class="research__text">Share anything you write with
+                one click</div>
+            </div>
+            <div class="research__row--content">
+              <img class="research__icon" src="/images/capture_icon.svg" alt="ios icon"></img>
+              <div class="research__head">Instant capture</div>
+              <div class="research__text">Save snippets from your
+                browser and Kindle</div>
+            </div>
+            <div class="research__row--content">
+              <img class="research__icon" src="/images/search_icon.svg" alt="ios icon"></img>
+              <div class="research__head">Frictionless search</div>
+              <div class="research__text">Easily recall and index past
+                notes and ideas</div>
+          </div>
+        </div> 
         </div>
+        <!-- Reflect section -->
         <div class="reflect">
           <div class="reflect__head">What can you do with Reflect AI?</div>
+          <div class="reflect__column"> 
           <div class="reflect__browser">
             <div class="reflect__name-text">Sandbox</div>
-            <div class="reflect__sub-head">Try Astro in
-              your browser</div>
-            <div class="reflect__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eius nam laborum placeat!</div>
+            <div class="reflect__sub-head">Try Astro in<span class="word-break">
+              your browser</span></div>
+            <div class="reflect__text">Start your first Astro project right in the browser—no local development environment or signup required!</div>
             <button class="reflect__btn"><span class="btn-linear">Start a project</span></button>
           </div>
           <div class="reflect__eco">
             <div class="reflect__name-text">Get Started</div>
             <div class="reflect__sub-head">Explore our
               ecosystem</div>
-              <div class="reflect__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eius nam laborum placeat!</div>
+              <div class="reflect__text">Discover 100+ themes & integrations to take your project to the next level: SEO, analytics CMS integrations and more.</div>
               <button class="reflect__btn"><span class="btn-linear">Explore themes</span></button>
           </div>
           <div class="reflect__docs">
             <div class="reflect__name-text">Documentation</div>
             <div class="reflect__sub-head">Learn more
               in our docs</div>
-              <div class="reflect__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eius nam laborum placeat!</div>
+              <div class="reflect__text">Thanks to our wonderful contributors, our docs are the best place to learn, troubleshoot, and
+                explore Astro.</div>
               <button class="reflect__btn"><span class="btn-linear">Start learning</span></button>
+            </div>
           </div>
         </div>
         <!-- other apps section -->
         <div class="apps">
-          <div class="apps__button"></div>
+          <div class="apps__button">Integrations</div>
           <div class="apps__head">Use Reflect </div>
           <div class="apps__head">with other apps</div>
-          <div class="apps__zapier">
+          <div class="apps__row-first">
+          <div class="apps__row--content">
           <img class=".apps__icon" src="/images/zapier_logo.svg" alt="zapier-logo">
           <div class="apps__sub-head">Zapier</div>
           <div class="apps__text">Connect with Reflect with dozens of
             applications without code</div>
           </div>
-        <div class="apps__readwise">  
+        <div class="apps__row--content">  
         <img class=".apps__icon" src="/images/R_logo.svg" alt="zapier-logo">
         <div class="apps__sub-head">Readwise</div>
         <div class="apps__text">Sync your reading highlights and
           notes with Reflect.</div>
         </div>
         </div>
+        <div class="apps__logo">
+          <img class="apps__logo" src="/images/logo1.svg" alt="apps_logo">
+        </div>
+        <div class="apps__row-second">
+          <div class="apps__row--content">
+          <img class=".apps__icon" src="/images/outlook_logo.svg" alt="outlook-logo">
+          <div class="apps__sub-head">Google and Outlook</div>
+          <div class="apps__text">Integrate your contacts and calendars</div>
+          </div>
+        <div class="apps__row--content">  
+        <img class=".apps__icon" src="/images/chrome_safari.svg" alt="chrome-logo">
+        <div class="apps__sub-head">Chrome and Safari</div>
+        <div class="apps__text">Save web clips and sync with your Kindle</div>
+        </div>
+        </div>
+        </div>
       <!-- get access section -->
       <div class="access">
+        <div class="access__image">
+        <img src="/images/getaccess_bg.png" alt="access image">
+        </div>
         <div class="access__button">Get access</div>
         <div class="access__head">We like keeping things simple </div>
         <div class="access__head">One plan one price. </div>
       </div>
       <!-- additional features section -->
       <div class="additional">
+        <div class="additional__row">
         <img class=".additional__icon" src="/images/voice_notes.svg" alt="notes-icon">
         <div class="additional__sub-head">Transcribe voice notes</div>
         <div class="additional__text">with human-level accuracy</div>
@@ -122,7 +221,17 @@
         <div class="additional__sub-head">List key takeaways and action</div>
         <div class="additional__text">items from your meeting notes</div>
       </div>
+      <div class="additional__row-second">
+        <img class=".additional__icon" src="/images/spelling_icon.svg" alt="notes-icon">
+        <div class="additional__sub-head">Fix grammar, spelling</div>
+        <div class="additional__text">and improve your writing</div>
+        <img class="additional__icon" src="/images/prompts_icon.svg" alt="article-icon">
+        <div class="additional__sub-head">Save your own</div>
+        <div class="additional__text">custom prompts</div>
+     </div>
+      </div>
       <!-- Blogs section -->
+      <div class="blogs">
       <div class="blogs-container">
         <div class="blog-layer1">
         <div class="blog__text">firebase.blog</div>
@@ -140,8 +249,97 @@
       <div class="blog-layer5">
         <img src="/images/blog_layer5.png" alt="Layer 5" >
       </div>
+    </div>
+      <div class="marketing">
+        <div class="marketing__box">
+          <span class="marketing__box-text">Marketing</span>
+          <span class="marketing__box-icon">+</span>
+        </div>
+        <div class="marketing__box">
+          <span class="marketing__box-text">Marketing</span>
+          <span class="marketing__box-icon">+</span>
+        </div>
+        <div class="marketing__box">
+          <span class="marketing__box-text">Marketing</span>
+          <span class="marketing__box-icon">+</span>
+        </div>
       </div>
-           
+      <div class="blogs__AI">
+        <div class="blogs__AI--row">
+          <div class="blogs__text">How to use AI to take better notes</div>
+          <div class="blogs__text">Click to see magic</div>
+        </div>
+        <div class="blogs__AI--row">
+          <div class="blogs__text">What can LLMs like GPT do, specifically for note-taking?</div>
+        </div>
+      </div>
+    </div>
+      <!-- users section -->
+      <div class="user">
+        <div class="user__row--text">Used by the best
+          developers and teams
+          around the world:
+        </div>
+        <div class="user__row">
+          <img class="user__icon" src="/images/Google Logo.svg" alt="google logo">
+          <img class="user__icon" src="/images/microsoft.svg" alt="google logo">
+        </div>
+        <div class="user__row">
+          <img class="user__icon" src="/images/NordVPN.svg" alt="google logo">
+          <img class="user__icon" src="/images/Rokt Logo.svg" alt="google logo">
+        </div>
+        <div class="user__row ">
+          <img class="user__icon user__guardian" src="/images/guardian.svg" alt="google logo">
+          <img class="user__icon" src="/images/Trivago Logo.svg" alt="google logo">
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer__content">
+          <div class="footer__box">
+            <div class="footer__txt--head">Resources</div>
+            <div class="footer__txt">Documentation</div>
+            <div class="footer__txt">Starter templates</div>
+            <div class="footer__txt">Themes</div>
+            <div class="footer__txt">Integrations</div>
+          </div>
+          <div class="footer__box">
+            <div class="footer__txt--head">Community</div>
+            <div class="footer__txt">Showcase</div>
+            <div class="footer__txt">Contributing</div>
+            <div class="footer__txt">Open Collective</div>
+            <div class="footer__txt">Join our Discord</div>
+          </div>
+          <div class="footer__box">
+            <div class="footer__txt--head">About</div>
+            <div class="footer__txt">Who we are</div>
+            <div class="footer__txt">Press</div>
+            <div class="footer__txt">Careers</div>
+            <div class="footer__txt">Partner with us!</div>
+          </div>
+          <div class="footer__box">
+            <div class="footer__txt--head">More links</div>
+            <div class="footer__txt">Blog</div>
+            <div class="footer__txt">Swag Shop</div>
+            <div class="footer__txt">Wallpapers</div>
+          </div>
+        </div>
+        <div class="footer__icons">
+         <img src="/images/github_icon.png" alt="github logo"> 
+         <img src="/images/code_icon.png" alt="code logo">
+         <img src="/images/twitter_icon.png" alt="twitter logo">
+         <img src="/images/m_icon.png" alt="m_icon">
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright__privacy">
+          <div class="copyright__txt">Privacy Policy</div>
+          <div class="copyright__txt">Terms of Service</div>
+        </div>
+        <div class="copyright__content">
+          <div class="copyright__txt">MIT License © 2023 Astro Contributors</div>
+        </div>
+      </div>        
   </div>
 </body>
 </html>
