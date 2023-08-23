@@ -173,11 +173,11 @@ margin-bottom:0.8rem;
 .reflect__sub-head,.reflect__name-text,.reflect__text{
 text-align: left;
 }
-.word-break::before {
+/* .word-break::before {
   content: " ";
   display: inline-block;
   width: 100%;
-}
+} */
 .reflect__sub-head{
   line-height: 1;
 }
